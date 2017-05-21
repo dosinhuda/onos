@@ -7,3 +7,6 @@ SDMN- Software Defined Mobile Network.
 2. sudo docker run -t -d --name onos1 dosinhuda/onos
 3. docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "onos1"
 4. ssh -p 8101 karaf@172.17.0.2
+5. if cannot access then using: sudo ifconfig lo0 alias 172.17.0.2/16
+6. 
+7.
