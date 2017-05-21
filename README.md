@@ -4,7 +4,7 @@ Include: solutions for Radio Access Network (RAN), Core Mobile Network, Carrier 
 SDMN- Software Defined Mobile Network.
 # RUN ONOS & BUIL APPLICATION (on MAC OS)
 1. docker pull dosinhuda/onos
-2. sudo docker run -t -d -P --name onos1 dosinhuda/onos nginx
+2. sudo docker run -t -d -P --name onos1 dosinhuda/onos 
 3. docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "onos1"
 4. ssh -p 8101 karaf@172.17.0.2
 5. if cannot ping to 172.17.0.2 (attach IP to lo0): sudo ifconfig lo0 alias 172.17.0.2/16
